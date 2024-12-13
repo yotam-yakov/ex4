@@ -6,11 +6,11 @@ Assignment:
 #include <stdio.h>
 #include <string.h>
 
-void task1_robot_paths();
-void task2_human_pyramid();
-void task3_parenthesis_validator();
-void task4_queens_battle();
-void task5_crossword_generator();
+void task1RobotPaths();
+void task2HumanPyramid();
+void task3ParenthesisValidator();
+void task4QueensBattle();
+void task5CrosswordGenerator();
 
 int main()
 {
@@ -33,19 +33,19 @@ int main()
                 printf("Goodbye!\n");
                 break;
             case 1:
-                task1_robot_paths();
+                task1RobotPaths();
                 break;
             case 2:
-                task2_human_pyramid();
+                task2HumanPyramid();
                 break;
             case 3:
-                task3_parenthesis_validator();
+                task3ParenthesisValidator();
                 break;
             case 4:
-                task4_queens_battle();
+                task4QueensBattle();
                 break;
             case 5:
-                task5_crossword_generator();
+                task5CrosswordGenerator();
                 break;
             default:
                 printf("Please choose a task number from the list.\n");
@@ -60,27 +60,27 @@ int main()
     } while (task != 6);
 }
 
-void task1_robot_paths()
+void task1RobotPaths()
 {
     // Todo
 }
 
-void task2_human_pyramid()
+void task2HumanPyramid()
 {
     // Todo
 }
 
-void task3_parenthesis_validator()
+void task3ParenthesisValidator()
 {
     // Todo
 }
 
-void task4_queens_battle()
+void task4QueensBattle()
 {
     // Todo
 }
 
-void task5_crossword_generator()
+void task5CrosswordGenerator()
 {
     // Todo
 }
