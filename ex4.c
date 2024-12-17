@@ -1,7 +1,7 @@
 /******************
-Name:
-ID:
-Assignment:
+Name: Yotam Yakov
+ID: 207918822
+Assignment: ex4
 *******************/
 #include <stdio.h>
 #include <string.h>
@@ -15,8 +15,7 @@ void task5CrosswordGenerator();
 int main()
 {
     int task = -1;
-    do
-    {
+    do {
         printf("Choose an option:\n"
                "1. Robot Paths\n"
                "2. The Human Pyramid\n"
@@ -25,10 +24,8 @@ int main()
                "5. Crossword Generator\n"
                "6. Exit\n");
 
-        if (scanf("%d", &task))
-        {
-            switch (task)
-            {
+        if (scanf("%d", &task)) {
+            switch (task) {
             case 6:
                 printf("Goodbye!\n");
                 break;
@@ -51,36 +48,29 @@ int main()
                 printf("Please choose a task number from the list.\n");
                 break;
             }
-        }
-        else
-        {
+        } else {
             scanf("%*s");
         }
 
     } while (task != 6);
 }
 
-void task1RobotPaths()
-{
+void task1RobotPaths() {
     // Todo
 }
 
-void task2HumanPyramid()
-{
+void task2HumanPyramid() {
     // Todo
 }
 
-void task3ParenthesisValidator()
-{
+void task3ParenthesisValidator() {
     // Todo
 }
 
-void task4QueensBattle()
-{
+void task4QueensBattle() {
     // Todo
 }
 
-void task5CrosswordGenerator()
-{
+void task5CrosswordGenerator() {
     // Todo
 }
