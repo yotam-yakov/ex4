@@ -56,7 +56,22 @@ int main()
 }
 
 void task1RobotPaths() {
-    // Todo
+    int row, column;
+    printf("Please enter the coordinates of the robot (column, row):");
+    scanf("%d %d", &row, &column);
+
+    printf("The total number of paths the robot can take to reach home is: %d\n", recursion(row, column));
+
+}
+
+int robotPaths(int r, int c) {
+    if (r == 0 && c == 0) {
+        return 1;
+    } else if (r < 0 || c < 0) {
+        return 0;
+    }
+    
+    return robotPaths(r - 1, c) + robotPaths(r, c - 1);
 }
 
 void task2HumanPyramid() {
