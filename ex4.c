@@ -7,6 +7,7 @@ Assignment: ex4
 #include <string.h>
 
 #define PYRAMID_LEVELS 5
+#define MAX_BOARD_SIZE 20
 
 void task1RobotPaths();
 void task2HumanPyramid();
@@ -107,12 +108,47 @@ void task2HumanPyramid() {
     }
 }
 
+int isStringBalanced(char p) {
+    char c;
+    scanf("%c", &c);
+
+    if(c == '\n') {
+        return p == 0;
+    }
+
+    if(c == '(' || c == '[' || c == '{' || c == '<') {
+        if(!isStringBalanced(c)) {
+            return 0;
+        }
+    }
+
+    if((c == ')' && p == '(') || (c == '}' && p == '{') ||\
+       (c == ']' && p == '[') || (c == '>' && p == '<')) {
+        return 1;
+    }
+
+    if((c == ')' && p != '(') || (c == '}' && p != '{') ||\
+       (c == ']' && p != '[') || (c == '>' && p != '<')) {
+        return 0;
+    }
+
+    return isStringBalanced(p);
+}
+
 void task3ParenthesisValidator() {
-    // Todo
+    printf("Please enter a term for validation:\n");
+
+    scanf("%*[ ^\n ]");
+    char p = 0;
+    if(isStringBalanced(p)) {
+        printf("The parentheses are balanced correctly.\n");
+    } else {
+        printf("The parentheses are not balanced correctly.\n");
+    }
+    
 }
 
 void task4QueensBattle() {
-    // Todo
 }
 
 void task5CrosswordGenerator() {
